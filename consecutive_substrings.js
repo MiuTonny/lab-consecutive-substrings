@@ -16,7 +16,30 @@ module.exports = consecutiveSubstrings;
 
 
 if (require.main === module) {
-  
+  // add your own test in here
+
+  console.log("");
+
+  console.log("Expecting: ['p', 'pi', 'pik', 'pika', 'pikac', 'pikach', 'pikachu', 'i', 'ik', 'ika', 'ikac', 'ikach', 'ikachu', ...]");
+  console.log("=>", consecutiveSubstrings('pikachu'));
+
+  console.log("");
+
+  console.log("Expecting: ['e', 'ev', 'eve', 'v', 've', 'e']");
+  console.log("=>", consecutiveSubstrings('eve'));
+
+  console.log("");
+
+  console.log("Expecting: ['c', 'ch', 'cha', 'char', 'chart', 'charte', 'charter', 'h', 'ha', 'har', 'hart', 'harte', 'harter', ...]");
+  console.log("=>", consecutiveSubstrings('charter'));
+
+  console.log("");
+
+  console.log("Expecting: []");
+  console.log("=>", consecutiveSubstrings(''));
+ 
+
+ //pre build test case
   console.log("Expecting: ['a', 'ab', 'abc', 'b', 'bc', 'c']");
   console.log("=>", consecutiveSubstrings('abc'));
 

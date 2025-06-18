@@ -1,2 +1,30 @@
 Please add your pseudocode to this file
-And a written explanation of your solution
+/*
+Pseudocode:
+1. Create an empty array to store all substrings.
+2. Loop through each character in the string (start index).
+3. For each starting character: 
+
+Create substrings by extending one character at a time to the right.
+Add each substring to the array.
+
+4. After all substrings are created, return the array.
+*/
+
+
+And a written explanation of your solution.
+
+This function takes a string and returns all the possible consecutive substrings from it.
+It uses two nested loops:
+- The outer loop picks each character as a starting point.
+- The inner loop builds all substrings that start from that point by extending to the right.
+
+For example, with the string "abc":
+- Start with "a", then build "a", "ab", "abc"
+- Then "b" → "b", "bc"
+- Then "c" → "c"
+
+These are added to an array and returned at the end.
+
+Time Complexity: O(n^2)
+Because we use two nested loops that together process all combinations of start and end positions.
