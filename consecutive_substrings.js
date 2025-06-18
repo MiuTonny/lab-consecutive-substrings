@@ -1,6 +1,19 @@
 function consecutiveSubstrings(string) {
-  // type your code here
+  console.log("Input received:", string); //debugging
+
+  const substrings = [];
+
+  for (let start = 0; start < string.length; start++) {
+    for (let end = start + 1; end <= string.length; end++) {
+      substrings.push(string.slice(start, end));
+    }
+  }
+
+  return substrings;
 }
+
+module.exports = consecutiveSubstrings;
+
 
 if (require.main === module) {
   // add your own tests in here
@@ -13,6 +26,6 @@ if (require.main === module) {
   console.log("=>", consecutiveSubstrings('a'));
 }
 
-module.exports = consecutiveSubstrings;
+
 
 
